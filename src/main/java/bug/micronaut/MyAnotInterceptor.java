@@ -10,7 +10,7 @@ public class MyAnotInterceptor implements MethodInterceptor<Object, Object> {
 
   @Override
   public Object intercept(MethodInvocationContext<Object, Object> context) {
-    System.out.println("interceptor invoked");
+    System.out.println("around advice invoked");
     return context.proceed();
   }
 }
