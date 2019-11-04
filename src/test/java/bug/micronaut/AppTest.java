@@ -18,8 +18,9 @@ class AppTest {
   HttpClient client;
 
   @Test
-  void testMockBean() {
+  void test() {
     String res = client.toBlocking().retrieve("/example/bug");
+    System.out.println();
     System.out.println("Response: " + res);
   }
 }
